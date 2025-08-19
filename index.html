@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Learning Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="stats">
+            <div class="stat-item">
+                <span class="stat-label">Generation:</span>
+                <span id="generation" class="stat-value">1</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Alive:</span>
+                <span id="alive" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Best Score:</span>
+                <span id="best-score" class="stat-value">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Current Score:</span>
+                <span id="current-score" class="stat-value">0</span>
+            </div>
+        </div>
+        <div id="startScreen" class="start-screen">
+            <h1>Self-Learning Flappy Bird</h1>
+            <p>Watch AI birds learn to play through evolution!</p>
+            <button id="startBtn" class="start-btn">Start Game</button>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+        <div class="controls">
+            <button id="pauseBtn" class="control-btn">Pause</button>
+            <button id="speedBtn" class="control-btn">Speed: 1x</button>
+            <button id="resetBtn" class="control-btn">Reset</button>
+        </div>
+    </div>
+    <script src="neuralNetwork.js"></script>
+    <script src="geneticAlgorithm.js"></script>
+    <script src="bird.js"></script>
+    <script src="pipe.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
