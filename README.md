@@ -85,10 +85,4 @@ http://localhost:8000
 - Mutation rate: 8%
 - Elite selection: 10%
 
-## Contributing
 
-Feel free to fork this repository and submit pull requests for improvements!
-
-## License
-
-This project is open source and available under the MIT License.
